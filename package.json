@@ -12,7 +12,6 @@
     "nuxt",
     "eslint",
     "stylelint",
-    "prettier",
     "jest"
   ]
 }
