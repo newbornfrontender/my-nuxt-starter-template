@@ -13,5 +13,17 @@
     "eslint",
     "stylelint",
     "jest"
-  ]
+  ],
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "stylelint": "stylelint **/*.{css,vue}",
+    "stylelint:fix": "yarn stylelint --fix",
+    "eslint": "eslint --ext js,jsx,vue .",
+    "eslint:fix": "yarn eslint --fix",
+    "test:unit": "jest",
+    "test:unit:snapshot": "jest --updateSnapshot"
+  }
 }
