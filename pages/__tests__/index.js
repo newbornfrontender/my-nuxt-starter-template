@@ -1,10 +1,11 @@
 import { shallowMount } from '@vue/test-utils';
 import Component from '@/pages/index.vue';
 
-describe('Страницы', () => {
-  test('index.vue корректно отображает заголовок', () => {
+describe('Страница index', () => {
+  test('Корректно отображается заголовок', () => {
     const wrapper = shallowMount(Component);
 
     expect(wrapper.find('h1').text()).toBe('Главная страница');
+    expect(wrapper.element).toMatchSnapshot();
   });
 });
