@@ -9,9 +9,8 @@ module.exports = {
     '^.+\\.vue$': 'vue-jest',
   },
   moduleNameMapper: {
-    '^(~~|@@)?/(.*)$': '<rootDir>/$1',
+    '^~~?/(.*)$': '<rootDir>/$1',
+    '^@@?/(.*)$': '<rootDir>/$1',
   },
   snapshotSerializers: ['jest-serializer-vue'],
-  testMatch: ['<rootDir>/test/unit/**/*.(test|spec).(js|jsx)'],
-  testURL: 'http://localhost/',
 };
