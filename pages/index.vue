@@ -20,3 +20,15 @@
     }},
   };
 </script>
+
+<style>
+  html {
+    margin: 0;
+  }
+</style>
+
+<style scoped>
+  h1 {
+    color: red;
+  }
+</style>
