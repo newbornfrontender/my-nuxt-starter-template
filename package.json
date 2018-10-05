@@ -2,7 +2,6 @@
   "name": "my-nuxt-starter-template",
   "version": "1.0.0",
   "description": "Мой простой стартовый шаблон для проектов на Nuxt с линтерами и тестами",
-  "main": "index.js",
   "repository": "https://github.com/newbornfrontender/my-nuxt-starter-template.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
   "license": "MIT",
