@@ -24,5 +24,9 @@
     "eslint:fix": "yarn eslint --fix",
     "test": "jest",
     "test:snapshot": "yarn test --updateSnapshot"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "nuxt": "^2.1.0"
   }
 }
