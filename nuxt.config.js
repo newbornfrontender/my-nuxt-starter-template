@@ -1,4 +1,21 @@
 export default {
+  ignore: [
+    '**/__tests__/**',
+  ],
+
+  build: {
+    extractCSS: true,
+    cssSourceMap: true,
+    postcss: {
+      preset: {
+        stage: 0,
+        autoprefixer: {
+          grid: process.env.NODE_ENV === 'development' ? false : true,
+        },
+      },
+    },
+  },
+
   head: {
     htmlAttrs: {
       lang: 'ru',
@@ -14,54 +31,22 @@ export default {
     }],
   },
 
-  router: {
-    linkActiveClass: 'link-active',
-    linkExactActiveClass: 'link-exact',
-  },
+  modules: [
+    './build/eslint-loader',
+
+    '@nuxtjs/pwa',
+  ],
 
   loading: {
     color: 'black',
   },
 
-  modules: [
-    ['@nuxtjs/pwa', {
-      meta: {
-        name: 'Приложение',
-        author: 'Infant Frontender',
-        description: false,
-        ogType: false,
-        ogSiteName: false,
-        ogTitle: false,
-      },
+  router: {
+    linkActiveClass: 'link-active',
+    linkExactActiveClass: 'link-exact',
+  },
 
-      manifest: {
-        name: 'Приложение',
-        short_name: 'Приложение',
-        lang: 'ru',
-      },
-    }],
-  ],
-
-  build: {
-    postcss: {
-      preset: {
-        stage: 0,
-
-        autoprefixer: {
-          grid: process.env.NODE_ENV === 'development' ? false : true,
-        },
-      },
-    },
-
-    extend (config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(jsx?|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /node_modules/,
-        });
-      };
-    },
+  meta: {
+    author: 'Infant Frontender',
   },
 };
