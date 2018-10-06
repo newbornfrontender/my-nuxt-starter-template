@@ -1,6 +1,0 @@
-{
-  "stylelint": {},
-  "postcss-reporter": {
-    clearReportedMessages: true
-  }
-}
