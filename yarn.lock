@@ -2371,7 +2371,7 @@ chrome-trace-event@^1.0.0:
   dependencies:
     tslib "^1.9.0"
 
-ci-info@^1.5.0, ci-info@^1.6.0:
+ci-info@^1.5.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
   integrity sha512-vsGdkwSCDpWmP80ncATX7iea5DWQemg1UgCW5J8tqjU3lYw4FBYuj89J0CTVomA7BEfvSZd84GmHko+MxFQU2A==
@@ -6595,10 +6595,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-edge@^2.1.0-25645721.232bc01:
-  version "2.1.0-25645721.232bc01"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.1.0-25645721.232bc01.tgz#6eade093136dc43d41c9bd4755ef33210ba6b097"
-  integrity sha512-1423/qf7TQT23i+5T1GgCJ28TuadFHIFYM8KHFEmMspXToyuBOwUCEmIj9ivEXzENrIILQbqZdhLxrVXZpbXYg==
+nuxt@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.1.0.tgz#0875c4c1ce5dbd729d973a5aa0de0ee8aad35a8b"
+  integrity sha512-1HVhGohpuELXI4x9/6DdDey86XJ7vThJDd7iTmSd4RJg6V+k5JodlXqvmGRtoYNhBIGvK6kDL/qrQWdfwwXJBg==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/polyfill" "^7.0.0"
@@ -6608,7 +6608,7 @@ nuxt-edge@^2.1.0-25645721.232bc01:
     "@nuxtjs/youch" "^4.2.3"
     babel-loader "^8.0.4"
     cache-loader "^1.2.2"
-    caniuse-lite "^1.0.30000889"
+    caniuse-lite "^1.0.30000888"
     chalk "^2.4.1"
     chokidar "^2.0.4"
     compression "^1.7.3"
@@ -6636,17 +6636,17 @@ nuxt-edge@^2.1.0-25645721.232bc01:
     minimist "^1.2.0"
     optimize-css-assets-webpack-plugin "^5.0.1"
     pify "^4.0.0"
-    postcss "^7.0.5"
+    postcss "^7.0.4"
     postcss-import "^12.0.0"
     postcss-import-resolver "^1.1.0"
     postcss-loader "^3.0.0"
-    postcss-preset-env "^6.0.10"
+    postcss-preset-env "^6.0.7"
     postcss-url "^8.0.0"
     semver "^5.5.1"
     serialize-javascript "^1.5.0"
     serve-static "^1.13.2"
     server-destroy "^1.0.1"
-    std-env "^2.0.2"
+    std-env "^1.3.1"
     style-resources-loader "^1.2.1"
     terser-webpack-plugin "^1.1.0"
     thread-loader "^1.2.0"
@@ -7637,7 +7637,7 @@ postcss-place@^4.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-preset-env@^6.0.10:
+postcss-preset-env@^6.0.7:
   version "6.0.10"
   resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-6.0.10.tgz#47b05afa6db121b8b0c160a2aed322fa629f5ec5"
   integrity sha512-jTdfckYcArcyFYCW5hgF15XPzq5p7p5Bjnpxh7hWugcoPmOBh/+OCbIADAvXPkd91jSZmVe2zjOczMSCN5pRsQ==
@@ -7864,7 +7864,7 @@ postcss@^6.0.1, postcss@^6.0.20, postcss@^6.0.23:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.2, postcss@^7.0.5:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.2, postcss@^7.0.4, postcss@^7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.5.tgz#70e6443e36a6d520b0fd4e7593fcca3635ee9f55"
   integrity sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==
@@ -8997,13 +8997,6 @@ std-env@^1.1.0, std-env@^1.3.1:
   integrity sha512-KI2F2pPJpd3lHjng+QLezu0eq+QDtXcv1um016mhOPAJFHKL+09ykK5PUBWta2pZDC8BVV0VPya08A15bUXSLQ==
   dependencies:
     is-ci "^1.1.0"
-
-std-env@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/std-env/-/std-env-2.0.2.tgz#290baa5c905cd4d54f970596923d3f3077adaf06"
-  integrity sha512-c5ighQ15FdLEXYfeed0Zf2qA+YIIW3NcqsoohqaZvBLRhgSiqq+650JDGLAxu3NmdNU/VlWNTnb9sSZg5Xthgw==
-  dependencies:
-    ci-info "^1.6.0"
 
 stealthy-require@^1.1.0:
   version "1.1.1"
