@@ -6595,10 +6595,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-edge@^2.1.0-25645721.232bc01:
-  version "2.1.0-25645721.232bc01"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.1.0-25645721.232bc01.tgz#6eade093136dc43d41c9bd4755ef33210ba6b097"
-  integrity sha512-1423/qf7TQT23i+5T1GgCJ28TuadFHIFYM8KHFEmMspXToyuBOwUCEmIj9ivEXzENrIILQbqZdhLxrVXZpbXYg==
+nuxt-edge@^2.1.0-25647522.fb8a329:
+  version "2.1.0-25647522.fb8a329"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.1.0-25647522.fb8a329.tgz#e0efbebeb0d80f3539f0dfe4a487206f2f3cd504"
+  integrity sha512-wCoQacXYIlqt6qR/VvlQb2j4I/VBukZH1JAYWOJG5iA+GZFZI8uAr5rjw4PvptTIb9Rn7NbttF8dg2LTXJMXXw==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/polyfill" "^7.0.0"
@@ -8071,6 +8071,11 @@ quick-lru@^1.0.0:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
   integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
 
+ramda@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
+  integrity sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
+
 randomatic@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-3.1.0.tgz#36f2ca708e9e567f5ed2ec01949026d50aa10116"
@@ -9171,6 +9176,16 @@ stylelint-config-recommended@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.1.0.tgz#f526d5c771c6811186d9eaedbed02195fee30858"
   integrity sha512-ajMbivOD7JxdsnlS5945KYhvt7L/HwN6YeYF2BH6kE4UCLJR0YvXMf+2j7nQpJyYLZx9uZzU5G1ZOSBiWAc6yA==
+
+stylelint-webpack-plugin@^0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/stylelint-webpack-plugin/-/stylelint-webpack-plugin-0.10.5.tgz#0b6e0d373ff5e03baa8197ebe0f2625981bd266b"
+  integrity sha512-jtYx3aJ2qDMvBMswe5NRPTO7kJgAKafc6GilAkWDp/ewoAmnoxA6TsYMnIPtLECRLwXevaCPvlh2JEUMGZCoUQ==
+  dependencies:
+    arrify "^1.0.1"
+    micromatch "^3.1.8"
+    object-assign "^4.1.0"
+    ramda "^0.25.0"
 
 stylelint@^9.6.0:
   version "9.6.0"

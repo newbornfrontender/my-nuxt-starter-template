@@ -1,6 +1,8 @@
 export default async function () {
-  this.extendBuild((config, ctx) => {
-    if (ctx.isDev && ctx.isClient) {
+  // this.extendBuild((config, ctx) => {
+  this.extendBuild((config, { isDev, isClient }) => {
+    // if (ctx.isDev && ctx.isClient) {
+    if (isDev && isClient) {
       config.module.rules.push({
         enforce: 'pre',
         test: /\.(jsx?|vue)$/,
