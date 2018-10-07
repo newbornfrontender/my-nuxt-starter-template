@@ -22,8 +22,7 @@
     "stylelint:fix": "yarn stylelint --fix",
     "eslint": "eslint --ext js,jsx,vue .",
     "eslint:fix": "yarn eslint --fix",
-    "test": "jest",
-    "test:snapshot": "yarn test --updateSnapshot"
+    "test:unit": "jest"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
@@ -42,7 +41,6 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^5.0.0-beta.3",
     "jest": "^23.6.0",
-    "jest-serializer-vue": "^2.0.2",
     "stylelint": "^9.6.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-webpack-plugin": "^0.10.5",
