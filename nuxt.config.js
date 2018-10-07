@@ -1,14 +1,6 @@
-import deepmerge from 'deepmerge';
 import pwa from './config/modules/pwa';
 
-const modules = pwa;
-const config = modules;
-
-export default deepmerge(config, {
-  ignore: [
-    '**/__tests__/**',
-  ],
-
+export default {
   build: {
     extractCSS: true,
     cssSourceMap: true,
@@ -40,6 +32,7 @@ export default deepmerge(config, {
   modules: [
     './config/build/eslint-loader',
     './config/build/stylelint-webpack-plugin',
+    pwa,
   ],
 
   loading: {
@@ -50,4 +43,4 @@ export default deepmerge(config, {
     linkActiveClass: 'link-active',
     linkExactActiveClass: 'link-exact',
   },
-});
+};

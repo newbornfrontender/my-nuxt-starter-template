@@ -12,5 +12,4 @@ module.exports = {
     '^~~?/(.*)$': '<rootDir>/$1',
     '^@@?/(.*)$': '<rootDir>/$1',
   },
-  snapshotSerializers: ['jest-serializer-vue'],
 };

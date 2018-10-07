@@ -3,9 +3,9 @@ export default async function () {
     if (ctx.isDev && ctx.isClient) {
       config.module.rules.push({
         enforce: 'pre',
-        test: /\.(jsx?|vue)$/,
-        loader: 'eslint-loader',
         exclude: /node_modules/,
+        loader: 'eslint-loader',
+        test: /\.(jsx?|vue)$/,
       });
     };
   });
