@@ -13,6 +13,7 @@ export default {
       },
     },
   },
+
   head: {
     htmlAttrs: {
       lang: 'ru',
@@ -27,14 +28,17 @@ export default {
       content: 'ie=edge',
     }],
   },
+
   modules: [
     './config/build/eslint-loader',
     './config/build/stylelint-webpack-plugin',
     pwa,
   ],
+
   loading: {
     color: 'black',
   },
+
   router: {
     linkActiveClass: 'link-active',
     linkExactActiveClass: 'link-exact',
