@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
-    "nuxt": "^2.1.0"
+    "nuxt-edge": "^2.1.0-25647522.fb8a329"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
