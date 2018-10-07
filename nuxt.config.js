@@ -1,4 +1,10 @@
-export default {
+import merge from 'deepmerge';
+import nuxtjsPWA from './config/modules/nuxtjs-pwa';
+
+const modules = nuxtjsPWA;
+const config = modules;
+
+export default merge(config, {
   ignore: [
     '**/__tests__/**',
   ],
@@ -32,10 +38,8 @@ export default {
   },
 
   modules: [
-    './build/eslint-loader',
-    './build/stylelint-webpack-plugin',
-
-    '@nuxtjs/pwa',
+    './config/build/eslint-loader',
+    './config/build/stylelint-webpack-plugin',
   ],
 
   loading: {
@@ -46,8 +50,4 @@ export default {
     linkActiveClass: 'link-active',
     linkExactActiveClass: 'link-exact',
   },
-
-  meta: {
-    author: 'Infant Frontender',
-  },
-};
+});
