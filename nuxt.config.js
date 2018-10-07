@@ -33,7 +33,7 @@ export default {
 
   modules: [
     './build/eslint-loader',
-    // './build/stylelint-webpack-plugin',
+    './build/stylelint-webpack-plugin',
 
     '@nuxtjs/pwa',
   ],
