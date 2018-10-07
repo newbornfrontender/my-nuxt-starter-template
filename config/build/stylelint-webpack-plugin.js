@@ -1,9 +1,9 @@
-import StyleLintPlugin from 'stylelint-webpack-plugin';
+import StylelintWebpackPlugin from 'stylelint-webpack-plugin';
 
 export default async function () {
   this.extendBuild(config => {
     config.plugins.push(
-      new StyleLintPlugin({
+      new StylelintWebpackPlugin({
         files: '**/*.(css|vue)',
       }),
     );
