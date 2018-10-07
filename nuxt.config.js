@@ -5,10 +5,6 @@ const modules = pwa;
 const config = modules;
 
 export default deepmerge(config, {
-  ignore: [
-    '**/__tests__/**',
-  ],
-
   build: {
     extractCSS: true,
     cssSourceMap: true,
