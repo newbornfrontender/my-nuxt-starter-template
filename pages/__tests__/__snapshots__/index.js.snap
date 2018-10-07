@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Страница index Корректно отображается заголовок 1`] = `
-<h1>
-  Главная страница
-</h1>
-`;
