@@ -1,10 +1,10 @@
-import merge from 'deepmerge';
-import nuxtjsPWA from './config/modules/nuxtjs-pwa';
+import deepmerge from 'deepmerge';
+import pwa from './config/modules/pwa';
 
-const modules = nuxtjsPWA;
+const modules = pwa;
 const config = modules;
 
-export default merge(config, {
+export default deepmerge(config, {
   ignore: [
     '**/__tests__/**',
   ],
