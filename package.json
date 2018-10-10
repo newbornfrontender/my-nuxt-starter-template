@@ -11,6 +11,7 @@
     "nuxt",
     "eslint",
     "stylelint",
+    "prettier",
     "jest"
   ],
   "scripts": {
