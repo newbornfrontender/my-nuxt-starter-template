@@ -19,8 +19,10 @@
     "start": "nuxt start --config-file configs/nuxt.config.js",
     "generate": "nuxt generate --config-file configs/nuxt.config.js",
     "stylelint": "stylelint **/*.{css,vue}",
+    "stylelint:check": "stylelint-config-prettier-check",
     "stylelint:fix": "yarn stylelint --fix",
     "eslint": "eslint --ext js,jsx,vue .",
+    "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
     "eslint:fix": "yarn eslint --fix",
     "test:unit": "jest"
   },
