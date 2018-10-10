@@ -1,3 +1,5 @@
-/static/
 /.nuxt/
 /dist/
+
+/static/sitemap.*
+/static/sw.*
