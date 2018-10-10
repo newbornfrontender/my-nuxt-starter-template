@@ -3,7 +3,7 @@ export default {
 
   sitemap: {
     hostname: 'https://example.com',
-    // generate: true,
+    generate: true,
     routes: ['/'],
   },
 };
