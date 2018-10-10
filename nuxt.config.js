@@ -32,6 +32,7 @@ export default {
   modules: [
     './config/build/eslint-loader',
     './config/build/stylelint-webpack-plugin',
+    '@nuxtjs/sitemap',
     pwa,
   ],
 
@@ -43,4 +44,13 @@ export default {
     linkActiveClass: 'link-active',
     linkExactActiveClass: 'link-exact',
   },
+
+  sitemap: {
+    hostname: 'https://example.com',
+    gzip: false,
+    generate: true,
+    routes: [
+      '/',
+    ]
+  }
 };
