@@ -16,15 +16,20 @@ export default {
     htmlAttrs: {
       lang: 'ru',
     },
-    meta: [{
-      charset: 'utf-8',
-    }, {
-      name: 'viewport',
-      content: 'width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes',
-    }, {
-      'http-equiv': 'x-ua-compatible',
-      content: 'ie=edge',
-    }],
+    meta: [
+      {
+        charset: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes',
+      },
+      {
+        'http-equiv': 'x-ua-compatible',
+        content: 'ie=edge',
+      },
+    ],
   },
 
   loading: {

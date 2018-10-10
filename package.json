@@ -11,6 +11,7 @@
     "nuxt",
     "eslint",
     "stylelint",
+    "prettier",
     "jest"
   ],
   "scripts": {
@@ -19,15 +20,21 @@
     "start": "nuxt start --config-file configs/nuxt.config.js",
     "generate": "nuxt generate --config-file configs/nuxt.config.js",
     "stylelint": "stylelint **/*.{css,vue}",
+    "stylelint:check": "stylelint-config-prettier-check",
     "stylelint:fix": "yarn stylelint --fix",
     "eslint": "eslint --ext js,jsx,vue .",
+    "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
     "eslint:fix": "yarn eslint --fix",
+    "prettier": "prettier {.babelrc,**/*.{css,js,jsx,vue,md}}",
+    "prettier:list": "yarn prettier --list-different",
+    "prettier:write": "yarn prettier --write",
     "test:unit": "jest"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/sitemap": "^0.1.1",
-    "nuxt-edge": "^2.1.0-25651471.963b4dd"
+    "nuxt-edge": "^2.1.0-25651471.963b4dd",
+    "prettier": "^1.14.3"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -39,11 +46,15 @@
     "cross-env": "^5.2.0",
     "deepmerge": "^2.2.1",
     "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
     "eslint-loader": "^2.1.1",
+    "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-vue": "^5.0.0-beta.3",
     "jest": "^23.6.0",
     "stylelint": "^9.6.0",
+    "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
+    "stylelint-prettier": "^1.0.3",
     "stylelint-webpack-plugin": "^0.10.5",
     "vue-jest": "^2.6.0"
   }
