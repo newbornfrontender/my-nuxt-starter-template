@@ -1,10 +1,6 @@
-<template>
-  <h1>{{ title }} страница</h1>
-</template>
-
 <script>
   export default {
-    name: 'page-index',
+    name: 'PageIndex',
 
     data: () => ({
       title: 'Главная',
@@ -20,6 +16,10 @@
     }},
   };
 </script>
+
+<template>
+  <h1>{{ title }} страница</h1>
+</template>
 
 <style>
   html {
