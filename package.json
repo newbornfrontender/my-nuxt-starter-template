@@ -14,10 +14,10 @@
     "jest"
   ],
   "scripts": {
-    "serve": "cross-env NODE_ENV=development nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "serve": "cross-env NODE_ENV=development nuxt --config-file configs/nuxt.config.js",
+    "build": "nuxt build --config-file configs/nuxt.config.js",
+    "start": "nuxt start --config-file configs/nuxt.config.js",
+    "generate": "nuxt generate --config-file configs/nuxt.config.js",
     "stylelint": "stylelint **/*.{css,vue}",
     "stylelint:fix": "yarn stylelint --fix",
     "eslint": "eslint --ext js,jsx,vue .",
