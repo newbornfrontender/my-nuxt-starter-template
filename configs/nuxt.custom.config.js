@@ -7,8 +7,5 @@ const modules = merge(pwa, sitemap);
 const config = modules;
 
 export default merge(config, {
-  modules: [
-    '~/build/eslint-loader',
-    '~/build/stylelint-webpack-plugin',
-  ],
+  modules: ['~/build/eslint-loader', '~/build/stylelint-webpack-plugin'],
 });

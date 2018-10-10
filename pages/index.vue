@@ -1,20 +1,24 @@
 <script>
-  export default {
-    name: 'PageIndex',
+export default {
+  name: 'PageIndex',
 
-    data: () => ({
-      title: 'Главная',
-    }),
+  data: () => ({
+    title: 'Главная',
+  }),
 
-    head () { return {
+  head() {
+    return {
       title: this.title,
-      meta: [{
-        hid: 'index-description',
-        name: 'description',
-        content: `${this.title} - описание`,
-      }],
-    }},
-  };
+      meta: [
+        {
+          hid: 'index-description',
+          name: 'description',
+          content: `${this.title} - описание`,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template>
@@ -22,13 +26,13 @@
 </template>
 
 <style>
-  html {
-    margin: 0;
-  }
+html {
+  margin: 0;
+}
 </style>
 
 <style scoped>
-  h1 {
-    color: red;
-  }
+h1 {
+  color: red;
+}
 </style>

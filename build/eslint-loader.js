@@ -1,4 +1,4 @@
-export default async function () {
+export default async function() {
   this.extendBuild((config, ctx) => {
     if (ctx.isDev && ctx.isClient) {
       config.module.rules.push({
@@ -7,6 +7,6 @@ export default async function () {
         loader: 'eslint-loader',
         exclude: /node_modules/,
       });
-    };
+    }
   });
-};
+}
