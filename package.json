@@ -24,6 +24,9 @@
     "eslint": "eslint --ext js,jsx,vue .",
     "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
     "eslint:fix": "yarn eslint --fix",
+    "prettier": "prettier **/*.{css,js,jsx,vue,md,babelrc}",
+    "prettier:list": "yarn prettier --list-different",
+    "prettier:write": "yarn prettier --write",
     "test:unit": "jest"
   },
   "dependencies": {
