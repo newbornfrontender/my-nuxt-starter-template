@@ -2,5 +2,6 @@
 /.nuxt/
 /dist/
 
+/static/sitemap.*
 /static/sw.*
 /*.log
