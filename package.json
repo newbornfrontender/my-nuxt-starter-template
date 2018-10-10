@@ -53,6 +53,7 @@
     "stylelint": "^9.6.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
+    "stylelint-prettier": "^1.0.3",
     "stylelint-webpack-plugin": "^0.10.5",
     "vue-jest": "^2.6.0"
   }

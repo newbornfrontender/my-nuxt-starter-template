@@ -9236,6 +9236,13 @@ stylelint-config-recommended@^2.1.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.1.0.tgz#f526d5c771c6811186d9eaedbed02195fee30858"
   integrity sha512-ajMbivOD7JxdsnlS5945KYhvt7L/HwN6YeYF2BH6kE4UCLJR0YvXMf+2j7nQpJyYLZx9uZzU5G1ZOSBiWAc6yA==
 
+stylelint-prettier@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/stylelint-prettier/-/stylelint-prettier-1.0.3.tgz#d7b1e8c331045dc1fd9d792dd8a1a5afc5304018"
+  integrity sha512-yzlhOKg2AmzGmKfWN9LPONr7/8O15QkGLtofhDsbpiEHCXMS5fZbQ0lcjopOAm6iU7vzETRFbOSHrDNJCRepbA==
+  dependencies:
+    prettier-linter-helpers "^1.0.0"
+
 stylelint-webpack-plugin@^0.10.5:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/stylelint-webpack-plugin/-/stylelint-webpack-plugin-0.10.5.tgz#0b6e0d373ff5e03baa8197ebe0f2625981bd266b"
