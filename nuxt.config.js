@@ -1,6 +1,12 @@
-import pwa from './config/modules/pwa';
+import merge from 'deepmerge';
 
-export default {
+import pwa from './modules/pwa';
+import sitemap from './modules/sitemap';
+
+const modules = merge(pwa, sitemap);
+const config = modules;
+
+export default merge(config, {
   build: {
     extractCSS: true,
     cssSourceMap: true,
@@ -32,8 +38,6 @@ export default {
   modules: [
     './build/eslint-loader',
     './build/stylelint-webpack-plugin',
-    '@nuxtjs/sitemap',
-    pwa,
   ],
 
   loading: {
@@ -44,13 +48,4 @@ export default {
     linkActiveClass: 'link-active',
     linkExactActiveClass: 'link-exact',
   },
-
-  sitemap: {
-    hostname: 'https://example.com',
-    gzip: false,
-    generate: true,
-    routes: [
-      '/',
-    ]
-  }
-};
+});
