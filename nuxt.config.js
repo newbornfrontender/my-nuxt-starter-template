@@ -30,8 +30,8 @@ export default {
   },
 
   modules: [
-    './config/build/eslint-loader',
-    './config/build/stylelint-webpack-plugin',
+    './build/eslint-loader',
+    './build/stylelint-webpack-plugin',
     '@nuxtjs/sitemap',
     pwa,
   ],
