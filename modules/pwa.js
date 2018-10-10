@@ -1,5 +1,7 @@
-export default ['@nuxtjs/pwa', {
+export default {
+  modules: ['@nuxtjs/pwa'],
+
   meta: {
     author: 'Infant Frontender',
   },
-}];
+};
