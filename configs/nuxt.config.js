@@ -1,6 +1,16 @@
 import merge from 'deepmerge';
 
-import baseConfig from './nuxt.base.config';
-import customConfig from './nuxt.custom.config';
+import baseConfig from './internals/base';
+import customConfig from './internals/custom';
 
-export default merge(baseConfig, customConfig);
+export default merge(baseConfig, customConfig, {
+  build: {
+    postcss: {
+      preset: {
+        autoprefixer: {
+          grid: false,
+        },
+      },
+    },
+  },
+});
