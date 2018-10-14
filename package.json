@@ -32,7 +32,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/sitemap": "^0.1.1",
-    "nuxt-edge": "^2.1.0-25652850.9bb76bc"
+    "nuxt-edge": "^2.2.0-25657632.95428c2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
