@@ -5,9 +5,6 @@ export default {
     postcss: {
       preset: {
         stage: 0,
-        autoprefixer: {
-          grid: process.env.NODE_ENV === 'development' ? false : true,
-        },
       },
     },
   },
