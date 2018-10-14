@@ -1,7 +1,7 @@
 import merge from 'deepmerge';
 
-import pwa from '../modules/pwa';
-import sitemap from '../modules/sitemap';
+import pwa from '../../modules/pwa';
+import sitemap from '../../modules/sitemap';
 
 const modules = merge(pwa, sitemap);
 const config = modules;
