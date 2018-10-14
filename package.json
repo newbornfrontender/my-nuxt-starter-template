@@ -21,10 +21,8 @@
     "generate": "nuxt generate --config-file configs/nuxt.generate.config.js",
     "stylelint": "stylelint **/*.{css,vue}",
     "stylelint:check": "stylelint-config-prettier-check",
-    "stylelint:fix": "yarn stylelint --fix",
     "eslint": "eslint --ext js,jsx,vue .",
     "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
-    "eslint:fix": "yarn eslint --fix",
     "prettier:list": "prettier **/*.{css,js,jsx,vue,md} --list-different",
     "prettier:write": "prettier **/*.{css,js,jsx,vue,md} --loglevel silent --write",
     "test:unit": "jest"
