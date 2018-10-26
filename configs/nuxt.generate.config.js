@@ -1,4 +1,7 @@
 export default {
+  env: {
+    NODE_ENV: 'production',
+  },
   build: {
     extractCSS: true,
     postcss: {
